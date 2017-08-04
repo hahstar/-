@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+				* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#da {
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				background-color: #EEEEEE;
+				/*flex-flow: row wrap;*/
+				justify-content: space-between;
+				display: flex;
+				overflow: scroll;
+			}
+			
+			#lan1 {
+				height: 20px;
+				width: 100%;
+				background-color: #212121;
+				justify-content: space-between;
+				display: flex;
+				position: fixed;
+				top: 0px;
+				z-index: 2;
+			}
+			
+			#shi {
+				background-color: #212121;
+				height: 20px;
+				width: 10%;
+				color: #BDBDBD;
+				text-indent: calc(10px);
+			}
+			
+			#xin img {
+				color: #A9A9A9;
+				height: 20px;
+				width: 45px;
+				position: absolute;
+				right: 20px;
+			}
+			
+			#xin {
+				color: #A9A9A9;
+				position: absolute;
+				right: 45px;
+			}
+			
+			#dian img {
+				height: 25px;
+				width: 30px;
+				position: absolute;
+				right: 6px;
+			}
+			
+			#lan2 {
+				height: 55px;
+				width: 100%;
+				background-color: #616161;
+				color: #BDBDBD;
+				font-size: calc(25px);
+				line-height: 55px;
+				text-indent: calc(25px);
+				position: fixed;
+				top: 20px;
+				z-index: 2;
+			}
+			
+			#fan {
+				height: 20px;
+				line-height: 55px;
+				position: absolute;
+				top: 15px;
+				left: 20px;
+			}
+			
+			#renming {
+				position: absolute;
+				left: 40px;
+			}
+			
+			#liaren {
+				height: 33px;
+				line-height: 55px;
+				position: absolute;
+				top: 15px;
+				right: 25px;
+			}
+			
+			#neirong{
+				flex-grow: 1;
+			    height: 100%;
+			    margin-top: 75px;
+			}
+			#yiceng{
+				height: 70px;
+				display: flex;
+				flex-flow: row;
+				
+			}
+			#tou img{
+				height:40px ;
+				width: 40px;
+				margin-left: 10px;
+				margin-top: 10px;
+				
+			}
+			#kuang{
+				
+				height: 45px;
+				width: 120px;
+				margin-left: 10px;
+				margin-top: 20px;
+				background-color:   #FFFFFF;
+			}
+			
+			#hua{
+				
+				margin-left: 10px;
+			}
+			#sanjiao{
+				height: 10px; width: 10px;
+				margin-left: 15px;
+				transform: rotate(45deg);
+				position: relative;
+				top: 10px;
+				left: -20px;
+				background-color: #FFFFFF ;
+				z-index: 2;
+			}
+			
+			
+			#xia {
+				background-color: #F5F5F5;
+				height: 45px;
+				width: 100%;
+				position: fixed;
+				bottom: 0px;
+				border-top: 1px solid #BDBDBD;
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+			}
+			
+			.xiatu img {
+				height: 30px;
+				width: 30px;
+				margin-right: 10px;
+			}
+			
+			#yuyin {
+				margin-left: 10px;
+			}
+			
+			#shurukuang{
+				width: 90%;
+			}
+			
+			#kuang1{
+				width: 100%;
+			}
+			
+			::-webkit-scrollbar {
+				display: none;
+		</style>
+
+	</head>
+
+	<body>
+		<div id="da">
+
+			<div id="lan1">
+				<div id="shi">18:30</div>
+				<div id="xin"><img src="../img/moments-portrait/信.png" />4G</div>
+				<div id="dian"><img src="../img/moments-portrait/电量.png" /></div>
+			</div>
+
+			<div id="lan2">
+				<a href="微信.html"><img id="fan" class="lan2nei" src="../img/moments-portrait/返回(1).png" /></a>
+				<p id="renming">小周 </p><img id="liaren" class="lan2nei" src="../img/moments-portrait/俩人.png" />
+
+			</div>
+			<div id="neirong">
+				<div id="yiceng">
+					<div id="tou"><img src="../img/moments-portrait/fc945a016041714e2c7df242890d69df.png"/></div>
+					<div id="kuang">
+						<div id="sanjiao"></div>
+						<div id="hua">帮我写首歌呗</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+			</div>
+
+			<div id="xia">
+				<div id="yuyin" class="xiatu"><img src="../img/moments-portrait/语音.png" /></div>
+				<div id="shurukuang" class="xiatu"><input type="text" style=" border-bottom: 1px solid #616161; border-top-style: none; border-right-style: none; border-left-style: none; " id="kuang1" /></div>
+				<div id="xiaolian " class="xiatu "><img src="../img/moments-portrait/笑脸.png "/></div>
+				<div id="jiahao " class="xiatu "><img src="../img/moments-portrait/加号(1).png "/></div>
+				
+				
+				
+			</div>
+			
+				
+
+			
+
+		</div>
+
+	</body>
+
+</html>

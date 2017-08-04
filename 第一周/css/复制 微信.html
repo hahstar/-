@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#da {
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				background-color: #EEEEEE;
+				display: flex;
+				flex-flow: column;
+				justify-content: space-between;
+				
+			}
+			
+			#lan1 {
+				height: 25px;
+				width: 100%;
+				background-color: #212121;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			#shi {
+				background-color: #212121;
+				height: 20px;
+				width: 50px;
+				color: #BDBDBD;
+				text-indent: calc(10px);
+			}
+			
+			#xin img {
+				height: 20px;
+				width: 30px;
+			}
+			
+			#xin {
+				display: flex;
+				flex-flow: row;
+				color: #9E9E9E;
+				margin-top: 3px;
+			}
+			.dianliang{
+				width: 50%;
+				display: flex;
+				align-items: center;
+				/*border: 1px solid white;*/				
+			}
+			.dianliang1{
+				width: 30px;height: 12px;
+				border: 1px solid white;
+				position: relative;
+			}
+			.dianliang2{
+				width: 20%;height: 12px;
+				background-color: red;
+				/*position: absolute;
+				left:0px 				*/
+			}
+			.dianliang3{
+				width: 2px;height:2px;
+				border: 1px solid white;
+				background-color: white;
+			}
+			
+			#lan2 {
+				height: 55px;
+				width: 100%;
+				background-color: #616161;
+				color: #BDBDBD;
+				font-size: calc(25px);
+				line-height: 55px;
+				text-indent: calc(25px);
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			#fang img {
+				height: 30px;
+				line-height: 55px;
+				margin-top: 5px;
+				margin-right: 10px;
+			}
+			
+			#zhong {
+				
+				display: flex;
+				flex-flow: column;
+				flex-grow: 1;
+				overflow: scroll;
+				
+				
+			}
+			.popup{
+				height: 220px;
+	            width: 170px;
+	            background:    #424242;
+	            position: absolute;
+	            right:20px; top: 70px;
+	            z-index: 1;
+	            display: flex;
+	            flex-flow: column nowrap;
+	            justify-content: space-around;
+	            align-items: center;
+	            color: white;
+			}
+			.content{
+				width: 100%;
+	            border-bottom: 1px solid black;
+	            display: flex;
+	            flex-flow: row nowrap;
+			}
+			/* 最后一个弹出层 去掉底部 边框  */
+           .content:last-child{
+	            border-bottom: none;
+            }
+            .content div{
+            	margin-top: 15px;
+            	padding: 0px 15px 0px 15px;
+            }
+            .content img{
+            	height: 30px;
+	            width: 30px;
+            }
+			
+			.xiaoceng {
+				width: 100%;
+				background-color: whitesmoke;
+				flex-grow: 1;
+			    height: 100%;
+			    
+			}
+			
+			.meiceng {
+				height: 60px;
+				padding: 0px 5px 0px 5px;
+				border: 1px solid lightgray;
+				display: flex;
+				flex-flow: nowrap;
+				background-color: white;
+				justify-content: space-between;
+				align-items: center;
+				overflow: scroll;
+				text-decoration: none;
+				
+			}
+			
+			/*.tu{
+				width: 10%;
+			}*/
+			
+			.tu img {
+				width: 45px;
+				height: 45px;
+				border-radius: 20%;
+				margin-top: 4px;
+				background-color: #039BE5;
+			}
+			#zhou{
+				color: #000000;
+			}
+			
+			
+			.cengzhong{
+				width: 90%
+				display: flex;
+				flex-flow: nowrap;
+				flex-grow: 1;
+				justify-content:flex-start;
+				padding-left: 18px ;
+				padding-top: 3px;
+				
+				
+				
+				
+				
+			}
+			::-webkit-scrollbar{
+				display: none;
+			}
+			
+			.hua{
+				color: #9E9E9E;
+				
+				
+			}
+			.shijian{
+				color: #9E9E9E;
+				line-height: 60px;
+			}
+			#xia {
+				height: 80px;
+				width: 100%;
+				background-color:  #E6E6FA;
+				position: relative;
+				bottom: 0px;
+				display: flex;
+				flex-flow: row;
+				justify-content: space-around;
+			}
+			
+			.xia2 img {
+				width: 45px;
+				height: 45px;
+			}
+			
+			.xia3 {
+				text-decoration: none;
+				display: flex;
+				flex-flow: column nowrap ;
+				color: 757575;
+				align-items: center;
+				color: #616161;
+				margin-top: 0px;
+			}
+			
+			/*.xia3:hover {
+				color: #76FF03;
+			}*/
+			#weixinzi{
+				color: #76FF03;
+			}
+			#hong {
+				border: 1px solid red;
+				height: 15px;
+				width: 15px;
+				background-color: red;
+				border-radius: 50%;
+				position: relative;
+				top: -70px;
+				left: 40px;
+			}
+		</style>
+    
+	</head>
+
+	<body>
+		<div id="da">
+
+			<div id="lan1">
+				<div id="shi">18:30</div>
+				<div id="xin">
+					<div><img src="../img/moments-portrait/信.png" /></div>
+					<div>4G</div>&nbsp;
+					<div class="dianliang">20%&nbsp;
+							<div class="dianliang1">
+								<div class="dianliang2">
+									
+								</div>
+							</div>
+							<div class="dianliang3">
+								
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="lan2">
+				<div id="wei">微信 </div>
+				<div id="fang"><img id="" class="lan2nei" src="../img/moments-portrait/放.png" />&nbsp;&nbsp;
+					<a href="微信.html"><img id="jia" class="lan2nei" src="../img/moments-portrait/加.png" /></a>
+				</div>
+
+			</div>
+			
+			<div id="zhong">
+				
+				
+			
+
+				<div class="xiaoceng">
+					<a href="聊天.html" class="meiceng">
+						<div class="tu"><img src="../img/moments-portrait/fc945a016041714e2c7df242890d69df.png"></div>
+						<div class="cengzhong">
+							<div id="zhou" class="mingzi">小周</div>
+						    <div class="hua">帮我写首歌呗</div>
+						</div>
+						<div class="shijian">刚刚</div>
+						
+					</a>
+
+					<div class="meiceng">
+						<div class="tu"><img src="../img/三胖-01.jpg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">小金</div>
+						    <div class="hua">大哥，美国欺人太甚</div>
+						</div>
+						<div class="shijian">15:20</div>
+					</div>
+					<div class="meiceng">
+						<div class="tu"><img src="../img/ceJj1kcy07gG.jpg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">腾讯新闻</div>
+						    <div class="hua">热烈庆祝国足登顶世界杯</div>
+						</div>
+						<div class="shijian">12:00</div>
+					</div>
+
+					<div class="meiceng">
+
+						<div class="tu"><img src="../img/女孩-01.jpeg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">表妹</div>
+						    <div class="hua">快点给我买点吃的</div>
+						</div>
+						<div class="shijian">昨天</div>
+					</div>
+					<div class="meiceng">
+						<div class="tu"><img src="../img/moments-portrait/fc945a016041714e2c7df242890d69df.png"></div>
+						<div class="cengzhong">
+							<div class="mingzi">小周</div>
+						    <div class="hua">帮我写首歌呗</div>
+						</div>
+						<div class="shijian">刚刚</div>
+					</div>
+
+					<div class="meiceng">
+						<div class="tu"><img src="../img/三胖-01.jpg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">小金</div>
+						    <div class="hua">大哥，美国欺人太甚</div>
+						</div>
+						<div class="shijian">15:20</div>
+					</div>
+					<div class="meiceng">
+						<div class="tu"><img src="../img/ceJj1kcy07gG.jpg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">腾讯新闻</div>
+						    <div class="hua">热烈庆祝国足登顶世界杯</div>
+						</div>
+						<div class="shijian">12:00</div>
+					</div>
+
+					<div class="meiceng">
+
+						<div class="tu"><img src="../img/女孩-01.jpeg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">表妹</div>
+						    <div class="hua">快点给我买点吃的</div>
+						</div>
+						<div class="shijian">昨天</div>
+					</div>
+					<div class="meiceng">
+						<div class="tu"><img src="../img/moments-portrait/fc945a016041714e2c7df242890d69df.png"></div>
+						<div class="cengzhong">
+							<div class="mingzi">小周</div>
+						    <div class="hua">帮我写首歌呗</div>
+						</div>
+						<div class="shijian">刚刚</div>
+					</div>
+					<div class="meiceng">
+						<div class="tu"><img src="../img/三胖-01.jpg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">小金</div>
+						    <div class="hua">大哥，美国欺人太甚</div>
+						</div>
+						<div class="shijian">15:20</div>
+					</div>
+					<div class="meiceng">
+						<div class="tu"><img src="../img/三胖-01.jpg"></div>
+						<div class="cengzhong">
+						    <div class="mingzi">小金</div>
+						    <div class="hua">大哥，美国欺人太甚</div>
+						</div>
+						<div class="shijian">15:20</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="xia" class="xia2">
+				<div >
+					<a id="weixinzi" class="xia3" href="../css/微信.html" ><img src="../img/moments-portrait/微信.png">微信 </a>
+				</div>
+				<div>
+					<a href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e9%80%9a%e8%ae%af%e5%bd%95.html" class="xia3"><img src="../img/moments-portrait/通讯录.png">通讯录</a>
+				</div>
+				<div>
+					<a href="发现.html" class="xia3"><img src="../img/moments-portrait/发现.png">发现</a>
+					<div id="hong"></div>
+				</div>
+				<div>
+					<a href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e6%88%91.html" class="xia3"><img src="../img/moments-portrait/我.png">我</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

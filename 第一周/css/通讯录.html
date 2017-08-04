@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#da {
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				background-color: #EEEEEE;
+				display: flex;
+				flex-flow: column;
+				justify-content: space-between;
+			}
+			
+			#lan1 {
+				height: 20px;
+				width: 100%;
+				background-color: #212121;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			#shi {
+				background-color: #212121;
+				height: 20px;
+				width: 50px;
+				color: #BDBDBD;
+				text-indent: calc(10px);
+			}
+			
+			#xin img {
+				height: 20px;
+				width: 30px;
+			}
+			
+			#xin {
+				display: flex;
+				flex-flow: row;
+				color: #9E9E9E;
+				margin: 1px;
+			}
+			
+			#lan2 {
+				height: 55px;
+				width: 100%;
+				background-color: #616161;
+				color: #BDBDBD;
+				font-size: calc(25px);
+				line-height: 55px;
+				text-indent: calc(25px);
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			#fang img {
+				height: 30px;
+				line-height: 55px;
+				margin-top: 5px;
+				margin-right: 10px;
+			}
+			
+			#zhong {
+				height: 100%;
+				display: flex;
+				flex-flow: column;
+				flex-grow: 1;
+			}
+			
+			.xiaoceng {
+				width: 100%;
+				background-color: whitesmoke;
+			}
+			
+			.meiceng {
+				height: 60px;
+				padding: 0px 5px 0px 5px;
+				border: 1px solid lightgray;
+				display: flex;
+				flex-flow: ;
+				background-color: white;
+				align-items: center;
+			}
+			
+			.meiceng a {
+				text-decoration: none;
+				color: #000000;
+			}
+			
+			.xuan img {
+				width: 45px;
+				height: 45px;
+				border-radius: 20%;
+				margin-top: 4px;
+				background-color: #039BE5;
+			}
+			
+			.biao img {
+				width: 45px;
+				height: 45px;
+				border-radius: 20%;
+				margin-top: 4px;
+			}
+			
+			.mingzi {
+				width: 95%;
+				display: flex;
+				flex-flow: column;
+				margin-left: 15px;
+				font-size: large;
+				padding-left: 5px;
+				justify-content: space-around;
+			}
+			
+			#xia {
+				height: 85px;
+				width: 100%;
+				background-color: #F5F5F5;
+				position: fixed;
+				bottom: 0px;
+				display: flex;
+				flex-flow: row;
+				justify-content: space-around;
+			}
+			
+			.xia2 img {
+				width: 45px;
+				height: 45px;
+			}
+			
+			.xia3 {
+				text-decoration: none;
+				display: flex;
+				flex-flow: column nowrap;
+				color: 757575;
+				align-items: center;
+				color: #616161;
+				margin-top: 10px;
+			}
+			
+			.xia3:hover {
+				color: #76FF03;
+			}
+			
+			#hong {
+				border: 1px solid red;
+				height: 15px;
+				width: 15px;
+				background-color: red;
+				border-radius: 50%;
+				position: relative;
+				top: -70px;
+				left: 40px;
+			}
+			#tongxunluzi{
+				color: #76FF03;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="da">
+
+			<div id="lan1">
+				<div id="shi">18:30</div>
+				<div id="xin">
+					<div><img src="../img/moments-portrait/信.png" /></div>
+					<div>4G</div>&nbsp;
+					<div> <img src="../img/moments-portrait/电量.png" /></div>
+				</div>
+			</div>
+
+			<div id="lan2">
+				<div id="wei">微信 </div>
+				<div id="fang"><img id="" class="lan2nei" src="../img/moments-portrait/放.png" />&nbsp;&nbsp;
+					<a href="#"><img id="jia" class="lan2nei" src="../img/moments-portrait/加.png" /></a>
+				</div>
+
+			</div>
+			<div id="zhong">
+
+				<div class="xiaoceng">
+					<div class="meiceng">
+						<a href="" class="xuan"><img src="../img/moments-portrait/新的朋友.png"></a>
+						<a href="" class="mingzi">新的朋友</a>
+					</div>
+
+					<div class="meiceng">
+						<a href="#" class="xuan"><img src="../img/moments-portrait/群聊.png"></a>
+						<a href="#" class="mingzi">群聊</a>
+					</div>
+					<div class="meiceng">
+						<a href="#" class="biao"><img src="../img/moments-portrait/标签.png"></a>
+						<a href="#" class="mingzi">标签</a>
+					</div>
+
+					<div class="meiceng">
+
+						<a href="#" class="xuan"><img src="../img/moments-portrait/公众号.png"></a>
+						<a href="#" class="mingzi">公众号</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="xia" class="xia2">
+				<div>
+					<a class="xia3" href="../css/微信.html"><img src="../img/moments-portrait/微信 图标-07.png">微信</a>
+				</div>
+				<div>
+					<a  id="tongxunluzi" href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e9%80%9a%e8%ae%af%e5%bd%95.html" class="xia3"><img src="../img/moments-portrait/通讯录(1).png">通讯录</a>
+				</div>
+				<div>
+					<a href="发现.html" class="xia3"><img src="../img/moments-portrait/发现.png">发现</a>
+					<div id="hong"></div>
+				</div>
+				<div>
+					<a href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e6%88%91.html" class="xia3"><img src="../img/moments-portrait/我.png">我</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

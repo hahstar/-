@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#da {
+				height: 100%;
+				width: 100%;
+				border-top: 2px solid #EF6C00;
+			}
+			
+			#shang {
+				height: 45px;
+				display: flex;
+				flex-flow: row;
+				box-shadow: 0px 0px 10px #424242;
+				
+			}
+			#shangzuo{
+				display: flex;
+				flex-flow: row;
+				margin-left: 70px;
+			}
+			#tubiao img{
+				height: 40px;width: 90px;
+			}
+			.sou {
+				
+				height: 22px;
+				width: 600px;
+				margin-top: 5px;
+				margin-left: 20px;
+				
+			}
+			#kuang{
+				height: 27px;
+				width: 450px;
+				background-color: #EEEEEE;
+				position: absolute;
+			}
+			#fang img{
+				height: 20px;width: 20px;
+				position: relative;
+				left: 420px;
+				top: 5px;
+			}
+			.shangyou{
+				display: flex;
+				flex-flow: row;
+				margin-left: 30px;
+				
+							
+			}
+			.shangyou img{
+				height:30px ;width: 30px;
+				margin-left: 30px;
+				margin-right: 30px;
+				margin-top: 10px;
+			
+			}
+			.ming{
+				margin-top: -30px;
+				margin-left: 70px;
+				color: #616161;
+				font-size:  calc(15px);
+				
+			}
+			.zhu{
+				height:30px ;width: 80px;
+				display: flex;
+				flex-flow: row;
+				margin-top: 10px;
+				margin-left: 30px;
+			}
+			.zhong{
+				width: 100%;
+				display: flex;
+				flex-grow: 1;
+			}
+			.zhongzuo{
+				border: 1px solid red;
+				height: 630px;width: 150px;
+				position: absolute;
+				top: 66px;
+				left: 75px;
+				
+			}
+			#re{
+				color: #EEEEEE;
+				background-color:#F4511E ;
+			}
+			.meiceng{
+				border: 1px solid red;
+				width: 150px;height: 41px;
+				font-size: calc(20px);
+				text-align: center;
+				line-height: 41px;
+				margin-bottom: 2px;
+				
+			}
+			.datu img{
+				height: 310px;width: 650px;
+				margin-left: 250px;
+				margin-top: 20px;
+				
+			}
+			.tuzi{
+				
+				height:40px ;width: 250px;
+				margin-left: 250px;
+				margin-top: -40px;
+				font-size: calc(20px);
+				color: #EEEEEE;
+			}
+			.weidu{
+				
+				height:40px ;width: 650px;
+				display: flex;
+				flex-flow: row;
+				line-height: 40px;
+				margin-left:250px ;
+				margin-top: 10px;
+				background-color: #FBE9E7;
+				
+			}
+			.weiduhua{
+				margin-left: 220px;
+				font-size: calc(15px);
+				color: #FF7043;
+				
+			}
+			.bacha{
+				margin-left: 240px;
+			}
+			.xinwen{
+				border: 1px solid red;
+				height:250px ;width:650px ;
+				margin-left:250px ;
+				margin-top: 10px;
+			}
+			.xinwen1{
+				border: 1px solid red;
+				height:115px ;width:650px ;
+				display: flex;
+				flex-flow: row;
+			}
+			.xinwentu1 img{
+				height: 100px;width: 140px;
+				margin-top: 5px;
+			}
+			.xinwenbiaoti1{
+				margin-left: 10px;
+				margin-top: 35px;
+				font-size: calc(14px);
+			}
+			.xinwenqita1{
+				margin-top: 5px;
+			}
+			
+			.xinwen2{
+				border: 1px solid red;
+				height:115px ;width:650px ;
+				margin-top: 10px;
+			}
+			.xinwen2{
+				border: 1px solid red;
+				height:115px ;width:650px ;
+				display: flex;
+				flex-flow: row;
+			}
+			.xinwentu2 img{
+				height: 100px;width: 140px;
+				margin-top: 5px;
+			}
+			.xinwenbiaoti2{
+				margin-left: 10px;
+				margin-top: 35px;
+				font-size: calc(14px);
+			}
+			.xinwenqita2{
+				margin-top: 5px;
+			}
+			.zhongyoushang{
+				border: 1px solid red;
+				background-color: #EEEEEE;
+				height:320px ;width: 320px;
+				margin-top: 20px;
+				margin-left: 20px;
+				
+			}
+			.denglubeijing{
+				border: 1px solid red;
+				background-color: #FFFFFF;
+				height:270px ;width: 270px;
+				margin-top: 20px;margin-left: 20px;
+				
+			}
+			.denglufangshi img{
+				width: 270px;height: 50px;
+			}
+			.zhongyouxia{
+				
+				background-color: #EEEEEE;
+				height:250px ;width: 320px;
+				margin-left: 20px;
+				margin-top: 30px;
+				
+			}
+			.zhanghao{
+				border: 1px solid red;
+				width: 250px;height: 40px;
+				margin-left: 10px;
+				margin-top: 10px;
+				display: flex;
+				
+				flex-flow: row;
+			}
+			.mima{
+				border: 1px solid red;
+				width: 250px;height: 40px;
+				margin-left: 10px;
+				margin-top: 15px;
+				display: flex;
+				
+				flex-flow: row;
+			}
+			#zhanghaokuang{
+				margin-top: 5px;
+				width: 210px;height: 30px;
+				margin-left: 10px;
+			}
+			#mimakuang{
+				width: 210px;height: 30px;
+				margin-left: 10px;
+				margin-top: 5px;
+			}
+			.zhangtu img{
+				height: 20px;width: 20px;
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+			.mitu img{
+				height: 20px;width: 20px;
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+			.denglu{
+				border: 1px solid red;
+				width: 250px;height: 30px;
+				margin-left: 10px;
+				margin-top: 30px;
+				text-align: center;
+				line-height: 30px;
+				background-color: #EF6C00;
+				color: #EEEEEE;
+			}
+			.zhongyouxia{
+				border-top: 1px solid #EF6C00;
+				
+			}
+			.dazi{
+				color: #424242 ;
+				font-size: calc(20px);
+				margin-left: 20px;
+				margin-top: 20px;
+				font-weight: 900;
+				
+			}
+			.shi1{
+				border: 1px solid red;
+				height:70px ;width: 280px;
+				margin-left: 20px;
+				margin-top: 10px;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="da">
+			<div id="shang">
+				<div id="shangzuo">
+					<div id="tubiao"><img src="../img/1501655708(1).png" sahngyou "></div>
+					<div class="sou"><input id="kuang" placeholder="大家正在搜：小米6 " />
+					<a href="#" id="fang"><img src="../img/moments-portrait/23A58PICU6K_1024.png"/></a></div>
+				</div>   
+				<div class="shangyou">  
+				    <div><img src="../img/moments-portrait/首页.png"/><div class="ming">首页</div></div>
+				    <div><img src="../img/moments-portrait/视频.png"/><div class="ming">视频</div></div>
+				    <div><img src="../img/moments-portrait/发现.png"/><div class="ming">发现</div></div>
+				    <div><img src="../img/moments-portrait/手柄.png"/><div class="ming">游戏</div></div>
+				    <div class="zhu">注册丨登录</div>
+					
+				</div>	
+				
+			</div>
+			<div class="zhong">
+				<div class="zhongzuo">
+					<div id="re" class="meiceng">热门</div>
+					<div class="meiceng">明星</div>
+					<div class="meiceng">头条</div>
+					<div class="meiceng">视频</div>
+					<div class="meiceng">新鲜事</div>
+					<div class="meiceng">榜单</div>
+					<div class="meiceng">搞笑</div>
+					<div class="meiceng">社会</div>
+					<div class="meiceng">情感</div>
+					<div class="meiceng">时尚</div>
+					<div class="meiceng">军事</div>
+					<div class="meiceng">美女</div>
+					<div class="meiceng">体育</div>
+					<div class="meiceng">动漫</div>
+					
+				</div>
+				<div class="zhongzhong">
+					<div class="datu">
+						<img src="../img/90eb2137ly1fhzsq0h813j21ao0t6b1f.jpg"/>
+						<div class="tuzi">今天你有没有演上反派?</div>
+					</div>
+					<div class="weidu">
+						<div class="weiduhua">您有未读内容，点击查看</div>
+						<div class="bacha">×</div>
+					</div>
+					<div class="xinwen">
+					<div class="xinwen1">
+						<div class="xinwentu1"><img src="../img/1501662166(1).png"/></div>
+						<div class="xinwennei1">
+							<div class="xinwenbiaoti1">终要和你说，不知是再见还是永别 </div>
+							<div class="xinwenqita1"><img src="../img/1501662425(1).png"/></div>	
+							
+						</div>
+					</div>
+					<div class="xinwen2">
+						<div class="xinwentu2"><img src="../img/1501662802.png"/></div>
+						<div class="xinwennei2">
+							<div class="xinwenbiaoti2">【深圳在港失联女大学生被找到 涉盗窃被捕】今天，深圳女大学生独自去香港后失联2天3夜的消息引发关注，最新消息显示，该女学生在到达香港的当日(</div>
+							<div class="xinwenqita2"><img src="../img/1501662802(1).png"/></div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="zhongyou">
+					<div class="zhongyoushang">
+						<div class="denglubeijing">
+							<div class="denglufangshi"><img src="../img/1501663658(1).png"/></div>
+							<div class="zhanghao"><div class="zhangtu"><img src="../img/moments-portrait/我.png"/></div><input id="zhanghaokuang" placeholder="邮箱/会员账号/手机号" /></div>
+							<div class="mima"><div class="mitu"><img src="../img/moments-portrait/锁子.png"/></div><input id="mimakuang" placeholder="请输入密码" /></div>
+							<div class="jizhuwo"></div>
+							<div class="denglu">登录</div>
+	
+						</div>
+					
+					</div>
+					
+					<div class="zhongyouxia">
+						<div class="dazi">微博新鲜事</div>
+						<div class="shi1">
+							<div class=""></div>
+							<div ></div>
+						</div>
+						<div class="shi2">
+							
+						</div>	
+						<div class="shi3">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

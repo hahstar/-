@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;				
+			}
+			#da{
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				background-color:#EEEEEE;
+				flex-flow: row wrap; 
+				justify-content: space-between;
+				
+			}
+			#lan1{
+				height: 20px;
+				width: 100%;
+				background-color: #212121;
+				justify-content: space-between;
+				display: flex;
+				position: absolute;
+				top: 0px;
+			}
+			#shi{
+				background-color: #212121 ;
+				height: 20px;
+				width: 10%;color: #BDBDBD;
+				text-indent: calc(10px);
+				
+				
+			}
+			#xin img{
+				color: #A9A9A9;
+				height: 20px;
+				width: 45px;
+				position: absolute;
+				right: 20px;
+			
+			}
+			#xin{
+				color: #A9A9A9;
+				position: absolute;
+				right: 45px;
+			}
+			#dian img{
+				height: 25px;
+				width: 30px;
+				position: absolute ;
+				right: 6px;
+				
+				
+			}
+			#lan2{
+				height: 55px;
+				width: 100%;
+				background-color: #616161;
+				color: #BDBDBD;
+				font-size: calc(25px);
+				line-height: 55px;
+				text-indent: calc(25px);
+				position: absolute;
+				top:20px ;
+			}
+			#fang {
+				height: 30px;
+				line-height: 55px;
+				position: absolute;
+				top: 15px;
+				right: 90px;
+			}
+			#jia{
+				height: 33px;
+				line-height: 55px;
+				position: absolute;
+				top: 15px;
+				right: 25px;
+			}
+			.lan2nei:hover{
+				box-shadow: 0px 0px 10px #212121;
+				
+				
+			
+			
+			}
+			#zhong .liao img{
+				
+				
+				
+			}
+			#zhong img{
+				
+			}
+			
+			.ming{
+				height:20px;
+				width: 100%;
+				color: #000000;
+				position: relative;
+				top: 40px;
+				left: 100px;
+				
+				color: #424242;
+			
+			}
+			.hua{
+				position: relative;
+				left: 80px;
+				top: 15px;
+				color: #9E9E9E;
+				font-size: calc(14px);
+			}
+			.shijian{
+				position: relative;
+				left: 90%;
+				top: -20px;
+				color: #9E9E9E;
+				font-size: calc(16px);
+			}
+			.shijian img{
+				height: 40px;
+				width: 40px;
+				position: absolute;
+				top: 35px;
+			
+				
+			}
+			#liao1 img{
+				width: 75px;
+				height: 75px;
+				position: relative;
+				top: 90px;
+				left: 20px;
+			}
+			
+			#liao2 img{
+				position: relative;
+				top: 90px;
+				left: 20px;
+				height: 40px;
+				width: 40px;
+				
+			}
+			#liao3 img{
+				position: relative;
+				top: 90px;
+				left: 20px;
+				height: 40px;
+				width: 40px;
+			}
+			#liao4 img{
+				position: relative;
+				top: 80px;
+				left: 20px;
+				height: 40px;
+				width: 40px;
+			}
+			#liao5 img{
+				position: relative;
+				top: 70px;
+				left: 20px;
+				height: 40px;
+				width: 40px;
+			}
+			#liao6 img{
+				position: relative;
+				top: 70px;
+				left: 20px;
+				height: 40px;
+				width: 40px;
+			}
+			#ming1{
+				position: absolute;
+				top: 200px;
+				left: 70px;
+			}
+			#ming2{
+				position: absolute;
+				top: 240px;
+				left: 70px;
+			}
+			#ming3{
+				position: absolute;
+				top: 280px;
+				left: 70px;
+			}
+			#ming4{
+				position: absolute;
+				top: 320px;
+				left: 70px;
+			}
+			#ming5{
+				position: absolute;
+				top: 360px;
+				left: 70px;
+			}
+			
+			.xian2{
+				position: relative;
+				top: 70px;
+			}
+			
+			#xia {
+				height: 85px;
+				width: 100%;
+				background-color: #F5F5F5;
+				position: fixed;
+				bottom: 0px;
+				display: flex;
+				flex-flow: row;
+				justify-content: space-around;
+			}
+			
+			.xia2 img {
+				width: 45px;
+				height: 45px;
+			}
+			
+			.xia3 {
+				text-decoration: none;
+				display: flex;
+				flex-flow: column nowrap;
+				color: 757575;
+				align-items: center;
+				color: #616161;
+				margin-top: 10px;
+			}
+			
+			.xia3:hover {
+				color: #76FF03;
+			}
+			
+			#hong {
+				border: 1px solid red;
+				height: 15px;
+				width: 15px;
+				background-color: red;
+				border-radius: 50%;
+				position: relative;
+				top: -70px;
+				left: 40px;
+				
+				
+				
+				
+			}
+			#wozi{
+				color: #76FF03;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="da">
+			
+			<div id="lan1">
+				<div id="shi">18:30</div><div id="xin"><img src="../img/moments-portrait/信.png"/>4G</div>
+				<div id="dian"><img src="../img/moments-portrait/电量.png"/></div>
+			</div>
+			
+			<div id="lan2">
+				微信 <img id="fang" class="lan2nei" src="../img/moments-portrait/放.png"/><img id="jia" class="lan2nei" src="../img/moments-portrait/加.png" />
+			<hr class="xian" color="#E0E0E0" width="100%"/>
+			</div>
+			<div id="zhong" >
+				<div  id="liao1"class="liao" ><img src="../img/20151123005924_RMmfE.thumb.224_0.jpeg"/></div><div class="ming">哇，他好酷</div>	<div class="hua"></div><div class="shijian"><img id="er" src="../img/moments-portrait/二维码.png"/></div><hr color="#E0E0E0" class="xian2"/>
+				<div id="liao2">
+				<div class="liao" ><img src="../img/moments-portrait/钱包.png"/></div><div id="ming1" class="">钱包</div>	<div class="hua"></div><div class="shijian"></div>	
+				</div>
+				<div id="liao3">
+				<div class="liao" ><img src="../img/moments-portrait/微信收藏_IOS.png"/></div><div id="ming2" class="">收藏</div>	<div class="hua"></div><div class="shijian"></div>
+				</div>
+				<div id="liao4">
+				<div class="liao" ><img src="../img/moments-portrait/相册.png"/></div><div id="ming3" class="">相册</div>	<div class="hua"></div><div class="shijian"></div>
+				</div>
+				<div id="liao5">
+				<div class="liao" ><img src="../img/moments-portrait/表情.png"/></div><div id="ming4" class="">表情</div>	<div class="hua"></div><div class="shijian"></div>	
+				</div>
+				<div id="liao6">
+				<div class="liao" ><img src="../img/moments-portrait/设置.png"/></div><div id="ming5" class="">设置</div>	<div class="hua"></div><div class="shijian"></div>	
+				</div>
+				
+				
+				
+			</div>
+			 
+		   
+			<div id="xia" class="xia2">
+				<div>
+					<a class="xia3" href="../css/微信.html"><img src="../img/moments-portrait/微信 图标-07.png">微信</a>
+				</div>
+				<div>
+					<a href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e9%80%9a%e8%ae%af%e5%bd%95.html" class="xia3"><img src="../img/moments-portrait/通讯录.png">通讯录</a>
+				</div>
+				<div>
+					<a href="发现.html" class="xia3"><img src="../img/moments-portrait/发现.png">发现</a>
+					<div id="hong"></div>
+				</div>
+				<div>
+					<a id="wozi" href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e6%88%91.html" class="xia3"><img src="../img/moments-portrait/我 on@2x.png">我</a>
+				</div>
+                 
+			</div>
+			<div id="hong"></div>
+			
+			
+		</div>
+		
+		
+	</body>
+</html>

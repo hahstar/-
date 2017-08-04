@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#da {
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				background-color: #EEEEEE;
+				display: flex;
+				flex-flow: column;
+				justify-content: space-between;
+			}
+			
+			#lan1 {
+				height: 20px;
+				width: 100%;
+				background-color: #212121;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			#shi {
+				background-color: #212121;
+				height: 20px;
+				width: 50px;
+				color: #BDBDBD;
+				text-indent: calc(10px);
+			}
+			
+			#xin img {
+				height: 20px;
+				width: 30px;
+			}
+			
+			#xin {
+				display: flex;
+				flex-flow: row;
+				color: #9E9E9E;
+				margin-top: 0px;
+			}
+			.dianliang{
+				width: 50%;
+				display: flex;
+				align-items: center;
+				/*border: 1px solid white;*/				
+			}
+			.dianliang1{
+				width: 30px;height: 12px;
+				border: 1px solid white;
+				position: relative;
+			}
+			.dianliang2{
+				width: 20%;height: 12px;
+				background-color: red;
+				position: absolute;
+				left:0px 				
+			}
+			.dianliang3{
+				width: 2px;height:2px;
+				border: 1px solid white;
+				background-color: white;
+			}
+			
+			#lan2 {
+				height: 55px;
+				width: 100%;
+				background-color: #616161;
+				color: #BDBDBD;
+				font-size: calc(25px);
+				line-height: 55px;
+				text-indent: calc(25px);
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			#fang img {
+				height: 30px;
+				line-height: 55px;
+				margin-top: 5px;
+				margin-right: 10px;
+			}
+			.jielun img{
+				height: 27px;width: 27px;
+				margin-right: 30px;
+				margin-top: 15px;
+			}
+			#hongshang{
+				border: 1px solid red;
+				height: 10px;
+				width: 10px;
+				background-color: red;
+				border-radius: 50%;
+				position: relative;
+				top: -38px;
+				left: 22px;
+				
+			}
+			
+			#zhong {
+				height: 100%;
+				display: flex;
+				flex-flow: column;
+				flex-grow: 1;
+			}
+			
+			.xiaoceng {
+				width: 100%;
+				margin-top: 10px;
+				background-color: whitesmoke;
+			}
+			
+			.meiceng {
+				height: 50px;
+				padding: 0px 4px 0px 4px;
+				border: 1px solid lightgray;
+				display: flex;
+				
+				background-color: white;
+				align-items: center;
+			}
+			
+			.meiceng a {
+				text-decoration: none;
+				color: #000000;
+			}
+			
+			.xuan img {
+				width: 45px;
+				height: 45px;
+				border-radius: 20%;
+				margin-top: 4px;
+			}
+			
+			.mingzi {
+				width: 95%;
+				display: flex;
+				flex-flow: column;
+				margin-left: 15px;
+				font-size: large;
+				padding-left: 5px;
+				justify-content: space-around;
+			}
+			
+			#xia {
+				height: 85px;
+				width: 100%;
+				background-color: #F5F5F5;
+				position: fixed;
+				bottom: 0px;
+				display: flex;
+				flex-flow: row;
+				justify-content: space-around;
+			}
+			
+			.xia2 img {
+				width: 45px;
+				height: 45px;
+			}
+			
+			.xia3 {
+				text-decoration: none;
+				display: flex;
+				flex-flow: column nowrap;
+				color: 757575;
+				align-items: center;
+				color: #616161;
+				margin-top: 10px;
+			}
+			
+			.xia3:hover {
+				color: #76FF03;
+			}
+			
+			#hong {
+				border: 1px solid red;
+				height: 15px;
+				width: 15px;
+				background-color: red;
+				border-radius: 50%;
+				position: relative;
+				top: -70px;
+				left: 40px;
+				
+				
+				
+				
+			}
+			#faxianzi{
+				color: #76FF03;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="da">
+
+			<div id="lan1">
+				<div id="shi">18:30</div>
+				<div id="xin">
+					<div><img src="../img/moments-portrait/信.png" /></div>
+					<div>4G</div>&nbsp;
+					<div class="dianliang">20%&nbsp;
+							<div class="dianliang1">
+								<div class="dianliang2">
+									
+								</div>
+							</div>
+							<div class="dianliang3">
+								
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="lan2">
+				<div id="wei">微信 </div>
+				<div id="fang"><img id="" class="lan2nei" src="../img/moments-portrait/放.png" />&nbsp;&nbsp;<a href="#"><img id="jia" class="lan2nei" src="../img/moments-portrait/加.png" /></a></div>
+
+			</div>
+			<div id="zhong">
+
+				<div class="xiaoceng">
+					<div class="meiceng">
+						<a href="朋友圈.html" class="xuan"><img src="../img/moments-portrait/朋友圈.png"></a>
+						<a href="朋友圈.html" class="mingzi">朋友圈</a>
+						<a href="朋友圈.html" class="jielun"><img src="../img/moments-portrait/fc945a016041714e2c7df242890d69df.png"/><div id="hongshang"></div></a>
+					</div>
+				</div>
+				<div class="xiaoceng">
+					<div class="meiceng">
+						<a href="#" class="xuan"><img src="../img/moments-portrait/扫一扫.png"></a>
+						<a href="#" class="mingzi">扫一扫</a>
+					</div>
+					<div class="meiceng">
+						<a href="#" class="xuan"><img src="../img/moments-portrait/摇一摇.png"></a>
+						<a href="#" class="mingzi">摇一摇</a>
+					</div>
+				</div>
+				<div class="xiaoceng">
+					<div class="meiceng">
+
+						<a href="#" class="xuan"><img src="../img/moments-portrait/附近的人.png"></a>
+						<a href="#" class="mingzi">附近的人</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="xia" class="xia2">
+				<div>
+					<a class="xia3" href="../css/微信.html"><img src="../img/moments-portrait/微信 图标-07.png">微信</a>
+				</div>
+				<div>
+					<a href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e9%80%9a%e8%ae%af%e5%bd%95.html" class="xia3"><img src="../img/moments-portrait/通讯录.png">通讯录</a>
+				</div>
+				<div>
+					<a id="faxianzi" href="#" class="xia3"><img src="../img/moments-portrait/发现(1).png">发现</a>
+					<div id="hong"></div>
+				</div>
+				<div>
+					<a href="http://127.0.0.1:8020/%e7%ac%ac%e4%b8%80%e5%91%a8/css/%e6%88%91.html" class="xia3"><img src="../img/moments-portrait/我.png">我</a>
+				</div>
+                 
+			</div>
+			
+
+		</div>
+
+	</body>
+
+</html>

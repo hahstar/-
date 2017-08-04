@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+				* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#da {
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				background-color: #EEEEEE;
+				/*flex-flow: row wrap;*/
+				justify-content: space-between;
+				display: flex;
+				overflow: scroll;
+			}
+			
+			#lan1 {
+				height: 20px;
+				width: 100%;
+				background-color: #212121;
+				justify-content: space-between;
+				display: flex;
+				position: fixed;
+				top: 0px;
+				z-index: 2;
+			}
+			
+			#shi {
+				background-color: #212121;
+				height: 20px;
+				width: 10%;
+				color: #BDBDBD;
+				text-indent: calc(10px);
+			}
+			
+			#xin img {
+				color: #A9A9A9;
+				height: 20px;
+				width: 45px;
+				position: absolute;
+				right: 20px;
+			}
+			
+			#xin {
+				color: #A9A9A9;
+				position: absolute;
+				right: 45px;
+			}
+			
+			#dian img {
+				height: 25px;
+				width: 30px;
+				position: absolute;
+				right: 6px;
+			}
+			
+			#lan2 {
+				height: 55px;
+				width: 100%;
+				background-color: #616161;
+				color: #BDBDBD;
+				font-size: calc(25px);
+				line-height: 55px;
+				text-indent: calc(25px);
+				position: fixed;
+				top: 20px;
+				z-index: 2;
+			}
+			
+			#fan {
+				height: 20px;
+				line-height: 55px;
+				position: absolute;
+				top: 15px;
+				left: 20px;
+			}
+			
+			#peng {
+				position: absolute;
+				left: 40px;
+			}
+			
+			#fang {
+				height: 30px;
+				line-height: 55px;
+				position: absolute;
+				top: 15px;
+				right: 90px;
+			}
+			
+			#jia {
+				height: 33px;
+				line-height: 55px;
+				position: absolute;
+				top: 15px;
+				right: 25px;
+			}
+			
+			#zhong {
+				/*display: flex;
+				flex-flow: column;*/
+				flex-grow: 1;
+				height: 100%;
+				margin-top: 75px;
+			}
+			
+			#bei {
+				height: 300px;
+				width: 100%;
+				background-image: url(../img/porsche-normal.jpg);
+				background-size:cover ;
+				background-position: center;
+				box-shadow: 0px 0px 10px black;
+				background-repeat: no-repeat;
+				z-index: -4;
+			}
+			
+			#tou {
+				height: 80px;
+				width: 90%;
+				display: flex;
+				/*flex-flow: row nowrap;*/
+				justify-content: flex-end;
+				/*margin: 0 auto;*/
+				position: absolute;
+				top: 330px;
+				right: 40px;
+				z-index: 0;
+			}
+			
+			.touming {
+				padding-right: 18px;
+				font-size: 16px;
+				color:   #FFFFFF;
+				display: flex;
+				align-items: center;
+				letter-spacing: 3px;
+				margin-top: -15px ;
+			}
+			
+			#tou img {
+				height: 80px;
+				width: 80px;
+			}
+			
+			#dongtai {
+				/*display: flex;
+				flex-flow: column;*/
+				flex-grow: 1;
+				width: 100%;
+				margin-top: 50px;
+			}
+			
+			.dong {
+				height: 230px;
+				width: 100%;
+				/*display: flex;
+				flex-flow: column;*/
+				margin-bottom: 10px;
+				border-bottom: 1px solid #BDBDBD;
+			}
+			
+			.dongtou img {
+				height: 40px;
+				width: 40px;
+			}
+			
+			.dongming {
+				font-size: large;
+				margin-left: 50px;
+				color: #1A237E;
+				margin-top: -40px;
+			}
+			
+			.donghua {
+				font-size: smaller;
+				color: #424242;
+				margin-left: 50px;
+			}
+			
+			.dongtu img {
+				height: 100px;
+				width: 150px;
+				margin-left: 60px;
+				margin-top: 5px;
+			}
+			.dongshi{
+				font-size: smaller;
+				color: #808080;
+				margin-left: 60px;
+				
+			}
+			.zanping img{
+				height: 25px;width: 25px;
+				position: absolute;
+				right: 10px;
+				margin-top: -20px;
+			}
+			
+			.zan {
+				background-color:#E0E0E0;
+				height: 50px;
+				width: 80%;
+				min-width: 300px;
+				margin-left: 50px;
+				margin-top: 5px;
+				margin-right: 30px;
+				display: flex;
+				flex-flow: column;
+				position: relative;
+			}
+			.sanjiao{
+				
+				height: 10px; width: 10px;
+				margin-left: 15px;
+				transform: rotate(45deg);
+				position: absolute;
+				top: -5px;
+				background-color: #E0E0E0 ;
+				z-index: 1;
+				
+			}
+			.zan1{
+				height: 20px;
+				display: flex;
+				flex-flow: row;
+				margin-top: 5px;
+				font-size: smaller;
+				
+				color: #757575;
+				
+			}
+			.zanren{
+				margin-left: 5px;
+			}
+			
+			.pinglun{
+				margin-top: 15px;
+				margin-left: 10px;
+				border-top: 1px solid #BDBDBD ;
+			}
+			.taoxin img{
+				height: 10px;width: 10px;
+				margin-left: 10px;
+			}
+			.dongtu2 img {
+				height: 80px;
+				width: 80px;
+				margin-right: 2px;
+				margin-top: 5px;
+				
+			}
+			.dongtu2{
+				margin-left: 60px;
+				
+			}
+			#zanpingkuang{
+				height: 30px;
+				width: 100px;
+				display: flex;
+				flex-flow: row;
+				position: absolute;
+				right: 40px;
+				margin-top: -27px;
+				background-color: #616161;
+			}
+			
+			 #zankuang img{
+			 	height: 25px;
+				width: 25px;
+				margin-right: 20px;
+				display: flex;
+				flex-flow: row;
+			 }
+			 #pingkuang img{
+			 	height: 25px;
+				width: 25px;
+				display: flex;
+				flex-flow: row;
+				margin-left: 2px;
+			 }
+			 .kuangzi{
+			 	margin-left: 24px;
+			 	font-size: small;
+			 	margin-top: -20px;
+			 	color: #E6E6FA;
+			 }
+			 #zanzi{
+			 	border-right:1px solid  #D3D3D3;
+			 }
+			::-webkit-scrollbar {
+				display: none;
+		</style>
+
+	</head>
+
+	<body>
+		<div id="da">
+
+			<div id="lan1">
+				<div id="shi">18:30</div>
+				<div id="xin"><img src="../img/moments-portrait/信.png" />4G</div>
+				<div id="dian"><img src="../img/moments-portrait/电量.png" /></div>
+			</div>
+
+			<div id="lan2">
+				<a href="发现.html"><img id="fan" class="lan2nei" src="../img/moments-portrait/返回(1).png" /></a>
+				<p id="peng">朋友圈 </p><img id="jia" class="lan2nei" src="../img/moments-portrait/相机.png" />
+
+			</div>
+			<div id="zhong">
+				<div id="bei">
+					<div id="tou">
+						<div class="touming">哇，他好酷</div>
+						<div class="toutu"><img src="../img/20151123005924_RMmfE.thumb.224_0.jpeg" /></div>
+					</div>
+				</div>
+				<div id="dongtai">
+					<div class="dong">
+						<div class="dongtou"><img src="../img/moments-portrait/fc945a016041714e2c7df242890d69df.png" /></div>
+						<div class="dongnei">
+							<div class="dongming">小周 </div>
+							<div class="donghua">今天很开心，和任总吃了个饭</div>
+							<div class="dongtu"><img src="../img/13288885_091508522155_2.jpg"></div>
+						    <div>
+						    	<div class="dongshi">1分钟前</div>
+						    	<div id="zanpingkuang">
+						    		<div id="zankuang"><img src="../img/moments-portrait/赞(2).png"/><div id="zanzi" class="kuangzi" >赞</div></div>
+						    		<div id="pingkuang"><img src="../img/moments-portrait/评论(1).png"/><div class="kuangzi">评论</div></div>
+						    	</div>
+						    	<div class="zanping"><img src="../img/moments-portrait/展开评论点赞.png"/></div>
+						    		
+						    	
+						    </div>	
+							<div class="zan">
+								<div class="zan1">
+								    <div class="taoxin"><img src="../img/moments-portrait/赞.png"/>
+								    </div>
+							        <div class="zanren">思聪，川普
+								    </div>
+								</div>
+								<div class="pinglun">马云：为什么任总不赏脸和我吃啊
+								</div>
+							<div class="sanjiao"></div></div>
+						</div>
+					</div>
+					<div class="dong">
+						<div class="dongtou"><img src="../img/u=274396154,3223798276&fm=26&gp=0.jpg" /></div>
+						<div class="dongnei">
+							<div class="dongming">德华</div>
+							<div class="donghua">最近比较烦比较烦比较烦</div>
+							<div class="dongtu2"><img src="../img/bd315c6034a85edfdc3f81034b540923dd54755a.jpg"><img src="../img/3bf33a87e950352aacdce5775343fbf2b2118b14.jpg"><img src="../img/u=2364005183,2871883913&fm=26&gp=0.jpg"></div>
+							<div>
+						    	<div class="dongshi">8分钟前</div>
+						    	<div class="zanping"><img src="../img/moments-portrait/展开评论点赞.png"/></div>
+						    		
+						    	
+						    </div>	
+							<div class="zan">
+								<div class="zan1">
+								    <div class="taoxin"><img src="../img/moments-portrait/赞.png"/>
+								    </div>
+							        <div class="zanren">哇，他好酷
+								    </div>
+								</div>
+								<div class="pinglun">华建：朋友啊朋友，你可曾记起了我
+								</div>
+							<div class="sanjiao"></div></div>
+						</div>
+					</div>
+					<div class="dong">
+						<div class="dongtou"><img src="../img/1299745352918.jpg" /></div>
+						<div class="dongnei">
+							<div class="dongming">刘强东 </div>
+							<div class="donghua">❤❤❤</div>
+							<div class="dongtu"><img src="../img/76e44c968f98bf1_size21_w503_h340.jpg"></div>
+						    <div>
+						    	<div class="dongshi">昨天</div>
+						    	<div class="zanping"><img src="../img/moments-portrait/展开评论点赞.png"/></div>
+						    		
+						    	
+						    </div>	
+							<div class="zan">
+								<div class="zan1">
+								    <div class="taoxin"><img src="../img/moments-portrait/赞.png"/>
+								    </div>
+							        <div class="zanren">奶茶妹妹
+								    </div>
+								</div>
+								<div class="pinglun">奶茶妹妹：⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄
+								</div>
+							<div class="sanjiao"></div></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
